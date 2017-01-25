@@ -30,6 +30,9 @@ function displayBooks(books) {
     var date = new Date(book.publication_date).toDateString();
     $li.append('<p><time>' + date + '</time></p>');
 
+    $li.append('<p>' + book.edition + '</p>');
+    $li.append('<p><em>' + book.publisher + '</em></p>');
+
     $('#book-list').append($li);
   });
 }
